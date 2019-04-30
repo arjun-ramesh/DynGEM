@@ -141,7 +141,7 @@ def build_model():
             model.add(Dense(embedding_dim, activation=activation_fn_embedding_layer, kernel_regularizer=regularizers.l2(l2_param), name='embedding-layer'))
             
             i = 0
-            decoding_dim.append(N)
+            #decoding_dim.append(N)
             for dim in decoding_dim:
                 i = i + 1
                 layer = Dense(dim, activation=activation_fn, kernel_regularizer=regularizers.l2(l2_param), name='decoding-layer-{}'.format(i))
