@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 file_prefix = 'snapshots/s'
 graph_file = file_prefix + str(7) + '_graph.gpickle'
 g = nx.read_gpickle(graph_file)
-np.set_printoptions(threshold=np.nan)
 N = g.number_of_nodes()
 
 test_ratio = 0.15
